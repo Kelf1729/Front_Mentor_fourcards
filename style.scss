@@ -12,17 +12,29 @@ $primary-color0: hsl(0, 78%, 62%);
 $primary-color1: hsl(180, 62%, 55%);
 $primary-color2: hsl(34, 97%, 64%);
 $primary-color3: hsl(212, 86%, 64%);
+// device
+$m-device: 376px;
+@mixin d($size) {
+  @if $size == m {
+    @media screen and (max-width: $m-device) {
+      @content;
+    }
+  }
+}
 // Site
 body {
   background: $neutral-color2;
-  width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 main {
   width: 1200px;
+  @include d(m) {
+    width: 350px;
+    margin-bottom: 20px;
+  }
   .box-up {
     text-align: center;
     margin-bottom: 50px;
@@ -42,13 +54,15 @@ main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    @include d(m) {
+      grid-template-columns: 350px;
+    }
   }
 }
 .cel-1,
 .cel-2,
 .cel-3,
 .cel-4 {
-  // min-width: 300px;
   max-height: 200px;
   background-color: white;
   padding: 30px;

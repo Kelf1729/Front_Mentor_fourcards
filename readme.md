@@ -8,8 +8,8 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Repositório](https://github.com/Kelf1729/Front_Mentor_fourcards.git)
+- Live Site URL: [Hospetagem](https://kelf1729.github.io/Front_Mentor_fourcards/)
 
 ### Built with
 
@@ -17,8 +17,8 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
 - CSS custom properties
 - Flexbox
 - CSS Grid
+- Mobile
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@kelf1729]
